@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="oppgave.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="start">
+            <h1>LAG DITT FOTBALLKORT</h1>
+        </div>
+        <div class="inputs">
+            <label for="name">Navn</label>
+            <input type="text"  id="name">
+            <label for="birth">Fødselsdato</label>
+            <input type="date" id="birth">
+            <label for="league">Liga</label>
+            <select id="league">
+                <option value="pl">PL</option>
+                <option value="laliga">La Liga</option>
+                <option value="seriea">Serie A</option>
+                <option value="bundesliga">Bundesliga</option>
+                <option value="eliteserien">Eliteserien</option>
+
+            </select>
+            <label for="categori">Posisjon</label>
+
+            <select  id="categori">
+                <option value="striker"> Striker</option>
+                <option value="midfielder"> Midfielder</option>
+                <option value="deffence"> Deffence</option>
+                <option value="gk"> GK</option>
+            </select>
+            <label for="goal">Mål</label>
+            <input type="number" id="goal">
+            <label for="assist">Målgivende</label>
+            <input type="number" id="assist">
+        </div>
+        <div class="button">
+            <Button id="Button">Generer</Button>
+        </div>
+        <div class="sort">
+            <button id="sortName">Sorter Navn</button>
+            <button id="sortDate">Sort Dato</button>
+        </div>
+    </div>
+
+        <div id="container"></div>
+</body>
+<script src="oppgave.js"></script>
+</html>
