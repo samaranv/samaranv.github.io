@@ -1,0 +1,149 @@
+@keyframes colorChange {
+    0%, 100% {
+        color: #84a98c;
+    }
+    25% {
+        color: #52796f;
+    }
+    50% {
+        color: #354f52;
+    }
+    75% {
+        color: #52796f;
+    }
+}
+
+body {
+    background-color: #cad2c5;
+}
+
+.wrapper  {
+    text-align: center;
+    
+}
+
+.start {
+    animation: colorChange 5s linear infinite;
+}
+
+label {
+    font-size: 20px;
+}
+
+input, select   {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; 
+    margin: 0.7em;
+}
+
+.button {
+    margin: 1em;
+}
+
+button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    background-color: #cad2c5;
+    border: none;
+    font-size: 19px;
+}
+
+.sort {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1.5em;
+    margin-bottom: 1em;
+}
+
+button:hover{
+    background-color: white;
+    font-weight: bold;
+} 
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.divEl {
+    display: flex;
+    width: 30vw;
+    margin: 1em;
+    /* border: 1px solid black; */
+    border-radius: 6px;
+    height: 40vh;
+    color: #EEE ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    font-size: 18px;
+    background-color: #3a5a40;
+}
+
+.divMainEl {
+    max-width: 70%;
+    position: relative;
+}
+.divBackgroundEl {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    width: 100%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.nameEl{
+    text-align: center;
+}
+
+
+.imageEl {
+    padding: 0.2vw;
+    max-width: 3vw;
+    max-height: fit-content;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+
+p {
+    /* padding: 1em; */
+    padding-left: 2em;
+    padding-right: 5px;
+}
+
+.deleteBtn {
+    background-color: #84a98c;
+    color: #EEE;
+    margin: auto;
+    /*
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    */
+    text-align: center;
+    display: block;
+    width: 2em;
+    height: 2em;
+        /* justify-content: center; */
+
+}
+
+.deleteBtn:hover {
+    font-size: 20px;
+    color: black;
+}
