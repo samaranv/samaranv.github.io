@@ -2,7 +2,7 @@ let imageSliderEl = document.querySelector(".imageSlider");
 let clubContainerEl = document.querySelector(".clubContainer")
 
 let counter = 0;
-let imgSlides = ["messiImg1.jpg","messiImg2.jpg", "messiImg3.jpg", "messiImg4.jpg" ];
+let imgSlides = ["./images/messiImg1.jpg","./images/messiImg2.jpg", "./images/messiImg3.jpg", "./images/messiImg4.jpg" ];
 updateSlider();
 
 function nextSlide() {

@@ -1,4 +1,4 @@
-let trophies = document.querySelectorAll(".tab-link");
+let trophies = document.querySelectorAll(".tab-link"); 
 
 let club = document.getElementById("club").addEventListener("click", function(){
     updateClass("club", clubTrophies)
@@ -88,6 +88,7 @@ let clubTrophies = [
 
 
 updateClass("national", nationalTrophies)
+
 function updateClass (idName, idNameTrophie){
     for(let i=0; i<trophies.length; i++){
         trophies[i].classList.remove("active-link");
@@ -112,17 +113,6 @@ function updateClass (idName, idNameTrophie){
         let nameEl = document.createElement("h1");
         nameEl.innerText =  o.name;
         nameEl.setAttribute("class", "nameEl");
-        // nameEl.addEventListener("mouseover", function () {
-        //     let hoverBox = document.createElement("p");
-        //     hoverBox.setAttribute("class", "hoverBox");
-        //     hoverBox.innerText = o.hover;
-        //     divEl.appendChild(hoverBox);})
-        // nameEl.addEventListener("mouseout", function () {
-        //     let existingHoverBox = divEl.querySelector(".hoverBox");
-        //     if (existingHoverBox) {
-        //         divEl.removeChild(existingHoverBox); // Fjerner boxen når musen ikke er over den
-        //     }
-        // });
         divEl.appendChild(nameEl);
 
 
