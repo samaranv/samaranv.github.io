@@ -4,7 +4,7 @@ let clubContainerEl = document.querySelector(".clubContainer")
 
 // Bildeslider
 let counter = 0;
-let imgSlides = ["./images/messiImg1.jpg","./images/messiImg2.jpg", "./images/messiImg3.jpg", "./images/messiImg4.jpg" ];
+let imgSlides = ["./Images/messiImg1.jpg","./Images/messiImg2.jpg", "./Images/messiImg3.jpg", "./Images/messiImg4.jpg" ];
 updateSlider();
 
 function nextSlide() {
@@ -29,22 +29,22 @@ setInterval(nextSlide, 5000);
 
 let clubList = [
     {
-        img: "./images/NOB.png",
+        img: "./Images/NOB.png",
         clubb: "Newell's Old Boys", 
         years: "1994-2000"
     },
     {
-        img: "./images/fcb.png",
+        img: "./Images/fcb.png",
         clubb: "FC Barcelona", 
         years: "2001-2021"
     },
     {
-        img: "./images/psg.png",
+        img: "./Images/psg.png",
         clubb: "PSG", 
         years: "2021-2023"
     },
     {
-        img: "./images/IM.png",
+        img: "./Images/IM.png",
         clubb: "Inter Miami", 
         years: "2023- "
     },

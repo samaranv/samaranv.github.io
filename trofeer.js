@@ -14,61 +14,61 @@ let trophieContainer = document.querySelector(".container")
 
 let nationalTrophies = [
     {
-        img: "./images/worldCupImg.png",
+        img: "./Images/worldCupImg.png",
         name:  "World Cup",
         antall: "1",
     },
     {
-        img: "./images/copaAmerica.png",
+        img: "./Images/copaAmerica.png",
         name:  "Copa America",
         antall: "1",       
     },
     {
-        img: "./images/finalissima.png",
+        img: "./Images/finalissima.png",
         name:  "Finalissima",
         antall: "1",
     },
 ];
 let induvidualTrophies = [
     {
-        img: "./images/ballonDor.png",
+        img: "./Images/ballonDor.png",
         name:  "Ballon d'or",
         antall: "8",        
     },
     {
-        img: "./images/pichichi.png",
+        img: "./Images/pichichi.png",
         name:  "Pichichi La liga",
         antall: "8",       
     },
     {
-        img: "./images/lwsa.png",
+        img: "./Images/lwsa.png",
         name:  "Laureus World Sports Awards",
         antall: "2",        
     },
     {
-        img: "./images/egs.png",
+        img: "./Images/egs.png",
         name:  "European Golden Shoe",
         antall: "6",        
     },
 ];
 let clubTrophies = [
     {
-        img: "./images/laliga.png",
+        img: "./Images/laliga.png",
         name:  "League Trophies",
         antall: "13",        
     },
     {
-        img: "./images/ucl.jpg",
+        img: "./Images/ucl.jpg",
         name:  "Champions League",
         antall: "4",        
     },
     {
-        img: "./images/cdr.png",
+        img: "./Images/cdr.png",
         name:  "Domestic Cup",
         antall: "8",       
     },
     {
-        img: "./images/cwc.png",
+        img: "./Images/cwc.png",
         name:  "Club World Cup",
         antall: "3",        
     },
