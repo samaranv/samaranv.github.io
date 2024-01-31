@@ -95,6 +95,9 @@ li:hover:before, li:hover:after
 }
 
 
+/* Styling for strek på under den valgte på side om troffer */
+
+
 .tab-link{
     font-family: Oswald, serif;
     cursor: pointer;
@@ -150,6 +153,8 @@ li:hover:before, li:hover:after
         font-family: Oswald, serif;
     }
 
+    /* Styling for Bildeslider */
+
     .imgSlide1, .imgSlide2, .imgSlide3, .imgSlide4{
         height: 100vh;
         max-width: 80vw;
@@ -157,6 +162,8 @@ li:hover:before, li:hover:after
         opacity: 0.1;
         animation: fadeInOut 5s ease-in-out infinite;
     }
+
+    /* Styling for Om messi (InfoBokser) */
 
     .infoMessi {
         margin-top: 5vw;
@@ -177,6 +184,8 @@ li:hover:before, li:hover:after
         
         
       }   
+
+    /* Styling For bilde med tekst */
 
     .imageBackground{
         margin-top: 10vw;
@@ -199,6 +208,8 @@ li:hover:before, li:hover:after
         width: 30vw;
         font-size: 0.7em;
     }
+
+    /* Styling for autogenering */
 
     .clubs, .nationalTeam, .trophie{
         display: flex;
@@ -245,6 +256,8 @@ li:hover:before, li:hover:after
 
 
 
+/* Mobil Versjon */
+
 @media (orientation:portrait) {
 
     /* Styling for header i hjemmesiden */
@@ -270,6 +283,8 @@ li:hover:before, li:hover:after
        font-family: Oswald, serif;
      }
 
+    /* Styling for Bildeslider */
+
     .imgSlide1, .imgSlide2, .imgSlide3, .imgSlide4{
         height: 40vh;
         max-width: 80vw;
@@ -278,6 +293,8 @@ li:hover:before, li:hover:after
         animation: fadeInOut 5s ease-in-out infinite;
     }
 
+    /* Styling for Om messi (InfoBokser) */
+
     .aboutMessi, .messiSucsess , .messiTime {
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -285,7 +302,9 @@ li:hover:before, li:hover:after
         font-family: Fira Sans, serif;
         margin: 10vw;
         padding: 5vw;
-      }   
+      }  
+      
+     /* Styling For bilde med tekst */
 
     .imageBackground{
         margin-top: 10vw;
@@ -308,6 +327,19 @@ li:hover:before, li:hover:after
         width: 20vw;
         font-size: 0.4em;
         padding-right: 10px;
+    }
+
+    /* Sytling for autogenerering */
+    .yearsEl{
+        color:rgb(26, 135, 237);
+      }
+
+    /* Side om troffer   */
+
+    .trophies{
+        display: flex;
+        justify-content: center;
+        gap: 15vw;
     }
 
     .trophie{
@@ -346,17 +378,11 @@ li:hover:before, li:hover:after
     .countEl{
         grid-area: C;
         margin-left: 1em;
-    }
-
-    .yearsEl, .countEl{
         color:rgb(26, 135, 237);
-      }
-
-    .trophies{
-        display: flex;
-        justify-content: center;
-        gap: 15vw;
     }
+
+
+    
 
     #recordsText{
         margin-left: 10vw;

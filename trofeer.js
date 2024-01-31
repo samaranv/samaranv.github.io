@@ -17,78 +17,69 @@ let nationalTrophies = [
         img: "./images/worldCupImg.png",
         name:  "World Cup",
         antall: "1",
-        hover: "The term World Cup typically refers to the FIFA World Cup, an international football (soccer) tournament that takes place every four years and is organized by the Fédération Internationale de Football Association (FIFA). The tournament is one of the most prestigious and widely watched sporting events globally, capturing the attention of millions of fans and showcasing the best football talent from around the world.        "
     },
     {
         img: "./images/copaAmerica.png",
         name:  "Copa America",
-        antall: "1",
-        hover: ""
+        antall: "1",       
     },
     {
         img: "./images/finalissima.png",
         name:  "Finalissima",
         antall: "1",
-        hover: ""
     },
 ];
 let induvidualTrophies = [
     {
         img: "./images/ballonDor.png",
         name:  "Ballon d'or",
-        antall: "8",
-        hover: ""
+        antall: "8",        
     },
     {
         img: "./images/pichichi.png",
         name:  "Pichichi La liga",
-        antall: "8",
-        hover: ""
+        antall: "8",       
     },
     {
         img: "./images/lwsa.png",
         name:  "Laureus World Sports Awards",
-        antall: "2",
-        hover: ""
+        antall: "2",        
     },
     {
         img: "./images/egs.png",
         name:  "European Golden Shoe",
-        antall: "6",
-        hover: ""
+        antall: "6",        
     },
 ];
 let clubTrophies = [
     {
         img: "./images/laliga.png",
         name:  "League Trophies",
-        antall: "13",
-        hover: ""
+        antall: "13",        
     },
     {
         img: "./images/ucl.jpg",
         name:  "Champions League",
-        antall: "4",
-        hover: ""
+        antall: "4",        
     },
     {
         img: "./images/cdr.png",
         name:  "Domestic Cup",
-        antall: "8",
-        hover: ""
+        antall: "8",       
     },
     {
         img: "./images/cwc.png",
         name:  "Club World Cup",
-        antall: "3",
-        hover: ""
+        antall: "3",        
     },
 ];
 
 
+// 
+updateClass("national", nationalTrophies);
 
-updateClass("national", nationalTrophies)
 
+// Legger til kontent og strek for å markere hvilken du er på
 function updateClass (idName, idNameTrophie){
     for(let i=0; i<trophies.length; i++){
         trophies[i].classList.remove("active-link");
@@ -108,6 +99,7 @@ function updateClass (idName, idNameTrophie){
         imgEl.setAttribute("src", o.img);
         imgEl.setAttribute("id", idNameTrophie + "Img" + (o+1))
         imgEl.setAttribute("class", "trophieImg")
+        imgEl.setAttribute("alt", "Bilde av trofet" + o.name);
         divEl.appendChild(imgEl);
 
         let nameEl = document.createElement("h1");
@@ -121,9 +113,9 @@ function updateClass (idName, idNameTrophie){
         countEl.setAttribute("class", "countEl");
         divEl.appendChild(countEl);
 
-        trophieContainer.appendChild(divEl)
-    }
-}
+        trophieContainer.appendChild(divEl);
+    };
+};
 
 
 

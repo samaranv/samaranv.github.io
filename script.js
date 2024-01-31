@@ -1,6 +1,8 @@
 let imageSliderEl = document.querySelector(".imageSlider");
 let clubContainerEl = document.querySelector(".clubContainer")
 
+
+// Bildeslider
 let counter = 0;
 let imgSlides = ["./images/messiImg1.jpg","./images/messiImg2.jpg", "./images/messiImg3.jpg", "./images/messiImg4.jpg" ];
 updateSlider();
@@ -18,7 +20,8 @@ function updateSlider(){
     let imageEl = document.createElement("img");
     imageEl.setAttribute("class","imgSlide" + (counter+1));
     imageEl.setAttribute("src", imgSlides[counter]);
-    imageSliderEl.appendChild(imageEl)
+    imageEl.setAttribute("alt", "Bilde av Messi");
+    imageSliderEl.appendChild(imageEl);
     imageSliderEl.offsetWidth;
 }
 
@@ -53,6 +56,8 @@ clubListHeaderEl.innerText = "Klubb Historikk";
 clubListHeaderEl.setAttribute("class", "headers");
 
 clubListDivEl.appendChild(clubListHeaderEl);
+
+// Autogenerer
 for(let i = 0; i< clubList.length;i++) {
   let o = clubList[i];
   let divEl = document.createElement("div");
@@ -62,6 +67,7 @@ for(let i = 0; i< clubList.length;i++) {
   imgEl.setAttribute("src", o.img);
   imgEl.setAttribute("id", "clubbImg" + (o+1))
   imgEl.setAttribute("class", "clubbImg")
+  imgEl.setAttribute("alt", "Logen til laget" + o.clubb)
   divEl.appendChild(imgEl);
   
   let clubbEl = document.createElement("h1");
